@@ -5,7 +5,6 @@ const AppContext = React.createContext();
 const AppProvider = ({ children }) => {
   const [meals, setMeals] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [searchValue, setSearchValue] = useState("");
   const [favorites, setFavorites] = useState(
     JSON.parse(localStorage.getItem("favorites")) || []
   );
